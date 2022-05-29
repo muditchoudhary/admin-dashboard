@@ -199,12 +199,24 @@ body {
 	margin-left: 8px;
 }
 .main {
+
+}
+
+.main .card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.main .cards {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-column: 2 / 3;
 }
-
-.main .card {
+.cards .main-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1f);
@@ -212,7 +224,7 @@ body {
     padding: 0px 15px;
 }
 
-.card .items {
+.main-card .items {
     border-radius: 8px;
     border: 1px solid #d7d7d7;
     padding: 15px;
@@ -220,13 +232,13 @@ body {
     box-shadow: 10px 10px 18px -12px #ad9696;
 }
 
-.card .items h3 {
+.main-card .items h3 {
     font-weight: 900;
     font-size: 20px;
     margin: 1px 0px;
 }
 
-.card .items p {
+.main-card .items p {
     font-size: 16px;
     margin: 11px 0px;
 }
@@ -242,7 +254,7 @@ body {
     height: auto;
     margin: 2px 5px;
 }
-.main .side {
+.cards .side {
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);
 }
