@@ -198,9 +198,6 @@ body {
 .sidebar ul li:not(li:first-child) {
 	margin-left: 8px;
 }
-.main {
-
-}
 
 .main .cards {
     display: grid;
@@ -285,4 +282,38 @@ body {
 
 .announcement-card hr {
     margin: 12px 0px;
+}
+
+.lower-side .trending-card {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.trending-data {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+
+.trending-data .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid red;
+
+}
+
+.trending-data .bio {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio .user-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bio .user-bio {
+    font-size: 12px;
+    font-weight: 400;
 }
