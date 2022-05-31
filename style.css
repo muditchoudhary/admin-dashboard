@@ -76,9 +76,8 @@ body {
 
 .header .upper-row {
     display: grid;
-    grid-template-columns: repe;
     align-items: center;
-    grid-template-columns: 26px 6fr 28px 50px 2fr;
+    grid-template-columns: 0.15fr 5fr 0.15fr 0.15fr 1fr;
     margin: 10px;
     gap: 8px;
     margin-left: 15px;
@@ -115,8 +114,8 @@ body {
 }
 
 .header .lower-row {
-	display: grid;
-    grid-template-columns: 55px 6fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 0.4fr 4fr 1fr 1fr 1fr;
     align-items: center;
     gap: 8px;
     margin-left: 15px;
@@ -150,7 +149,7 @@ body {
 }
 
 .lower-row .btn {
-    width: 93px;
+    width: 120px;
     height: 30px;
     border: 1px solid none;
     border: 1px solid #741212;
@@ -219,8 +218,8 @@ body {
 .cards .main-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 21px repeat(3, 1fr);
-    gap: 15px;
+    grid-template-rows: 21px repeat(3, 0.3fr);
+    gap: 20px;
     padding: 0px 15px;
 }
 
@@ -264,7 +263,6 @@ body {
 
 .cards .side {
 	display: grid;
-	grid-template-rows: 1.2fr 1fr;
     padding-right: 6px;
     gap: 8px;
 }
@@ -275,9 +273,12 @@ body {
     grid-template-rows: 21px 1fr;
     font-size: 20px;
     font-weight: 900;
+    gap: 20px;
 }
 
 .announcement-card {
+    display: grid;
+    grid-template-rows: 1fr 20px 1fr 20px 1fr;
     padding: 10px;
     border: 1px solid #f2dfcc;
     background: #f2dfcc;
@@ -288,13 +289,13 @@ body {
 .announcement-data span {
     font-size: 15px;
     font-weight: 600;
-    margin: 1px 0px;
 }
 
 .announcement-data p {
     font-size: 12px;
     font-weight: 400;
     color: #554532;
+    margin: 5px 0px;
 }
 
 .announcement-card hr {
@@ -303,7 +304,7 @@ body {
 
 .lower-side .trending-card {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     padding: 10px;
     border: 1px solid #f2dfcc;
     background: #f2dfcc;
@@ -341,4 +342,10 @@ body {
     font-weight: 400;
     color: #554532;
     margin: 4px 0px;
+}
+
+.main-card span,
+.upper-side span,
+.lower-side span {
+    margin: 10px 0px;
 }
